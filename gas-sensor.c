@@ -9,12 +9,12 @@
 #else
 #endif
 
-PROCESS(test_adc_process, "Gas Sensor");
-AUTOSTART_PROCESSES(&test_adc_process);
+PROCESS(gas_sensor, "Gas Sensor");
+AUTOSTART_PROCESSES(&gas_sensor);
 
 static struct etimer et;
 
-PROCESS_THREAD(test_adc_process, ev, data)
+PROCESS_THREAD(gas_sensor, ev, data)
 {
   PROCESS_BEGIN();
 
